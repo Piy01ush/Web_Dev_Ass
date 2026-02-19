@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Event Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">🎯 Smart Event Dashboard</h1>
+
+  <div class="container">
+
+    <!-- LEFT CARD -->
+    <div class="card">
+      <h2>Add New Event</h2>
+
+      <label>Event Title:</label>
+      <input type="text" id="eventTitle" placeholder="Enter event name">
+
+      <label>Event Date:</label>
+      <input type="date" id="eventDate">
+
+      <label>Category:</label>
+      <select id="eventCategory">
+        <option>Conference</option>
+        <option>Workshop</option>
+        <option>Meeting</option>
+        <option>Party</option>
+      </select>
+
+      <label>Description:</label>
+      <textarea id="eventDesc" placeholder="Write description"></textarea>
+
+      <p id="msg"></p>
+
+      <button onclick="addEvent()">Add Event</button>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="card">
+      <h2>My Events</h2>
+
+      <p id="eventCount" style="font-weight:bold; color:green;">Total Events: 0</p>
+
+      <div class="btn-row">
+        <button class="small-btn" onclick="clearEvents()">Clear All Events</button>
+        <button class="small-btn" onclick="addSampleEvents()">Add Sample Events</button>
+      </div>
+
+      <div id="eventList" class="event-list">
+        <p class="empty">No events yet. Add your first event!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DOM DEMO -->
+  <div class="card dom-card">
+    <h2>DOM Manipulation Demo</h2>
+    <div class="dom-box">
+      <b>You Pressed:</b> <span id="keyPressed">Nothing</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

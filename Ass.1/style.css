@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #55d6d0, #2cb8b2);
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 420px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  color: #3b82f6;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.small-btn {
+  width: 50%;
+  font-size: 14px;
+}
+
+.event-list {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 200px;
+}
+
+.event-item {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 5px solid #38bdf8;
+}
+
+.event-item button {
+  background: red;
+  margin-top: 10px;
+}
+
+.event-item button:hover {
+  background: darkred;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+  margin-top: 70px;
+}
+
+.dom-card {
+  width: 900px;
+  margin: 30px auto;
+}
+
+.dom-box {
+  background: #f3f4f6;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#msg {
+  font-weight: bold;
+  margin-top: 10px;
+}
