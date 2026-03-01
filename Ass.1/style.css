@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #55d6d0, #2cb8b2);
+  background: linear-gradient(to right, #6855d6, #6855d6);
   padding: 20px;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 25px;
   width: 420px;
   border-radius: 15px;
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-  background: #0ea5e9;
+  background: #d3e90e;
 }
 
 .btn-row {
