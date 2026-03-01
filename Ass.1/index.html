@@ -12,7 +12,6 @@
 
   <div class="container">
 
-    <!-- LEFT CARD -->
     <div class="card">
       <h2>Add New Event</h2>
 
@@ -24,10 +23,10 @@
 
       <label>Category:</label>
       <select id="eventCategory">
-        <option>Conference</option>
-        <option>Workshop</option>
-        <option>Meeting</option>
-        <option>Party</option>
+        <option>College</option>
+        <option>Gaming</option>
+        <option>Bike Riding</option>
+        <option>Study</option>
       </select>
 
       <label>Description:</label>
@@ -38,11 +37,10 @@
       <button onclick="addEvent()">Add Event</button>
     </div>
 
-    <!-- RIGHT CARD -->
     <div class="card">
       <h2>My Events</h2>
 
-      <p id="eventCount" style="font-weight:bold; color:green;">Total Events: 0</p>
+      <p id="eventCount" style="font-weight:bold; color:black;">Total Events: 0</p>
 
       <div class="btn-row">
         <button class="small-btn" onclick="clearEvents()">Clear All Events</button>
@@ -50,13 +48,12 @@
       </div>
 
       <div id="eventList" class="event-list">
-        <p class="empty">No events yet. Add your first event!</p>
+        <p class="empty">No events Add your first event</p>
       </div>
     </div>
 
   </div>
 
-  <!-- DOM DEMO -->
   <div class="card dom-card">
     <h2>DOM Manipulation Demo</h2>
     <div class="dom-box">
@@ -66,5 +63,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
