@@ -2,7 +2,7 @@ let events = JSON.parse(localStorage.getItem("events")) || [];
 
 displayEvents();
 
-// Show message in UI
+
 function showMessage(text, color) {
   let msg = document.getElementById("msg");
   msg.innerText = text;
@@ -13,12 +13,12 @@ function showMessage(text, color) {
   }, 2000);
 }
 
-// Save events to localStorage
+
 function saveEvents() {
   localStorage.setItem("events", JSON.stringify(events));
 }
 
-// Update event count
+
 function updateCount() {
   document.getElementById("eventCount").innerText =
     "Total Events: " + events.length;
@@ -31,7 +31,7 @@ function addEvent() {
   let desc = document.getElementById("eventDesc").value.trim();
 
   if (title === "" || date === "" || desc === "") {
-    showMessage("❌ Please fill all fields!", "red");
+    showMessage("Please fill all fields!", "yellow");
     return;
   }
 
@@ -44,7 +44,7 @@ function addEvent() {
   document.getElementById("eventDate").value = "";
   document.getElementById("eventDesc").value = "";
 
-  showMessage("✅ Event Added Successfully!", "green");
+  showMessage("Event Added Successfully!", "green");
 }
 
 function displayEvents() {
@@ -53,7 +53,7 @@ function displayEvents() {
   updateCount();
 
   if (events.length === 0) {
-    list.innerHTML = `<p class="empty">No events yet. Add your first event!</p>`;
+    list.innerHTML = `<p class="empty">No events Add your first event</p>`;
     return;
   }
 
@@ -79,38 +79,33 @@ function deleteEvent(index) {
   events.splice(index, 1);
   saveEvents();
   displayEvents();
-  showMessage("🗑️ Event Deleted!", "orange");
+  showMessage("Event Deleted", "red");
 }
 
 function clearEvents() {
   events = [];
   saveEvents();
   displayEvents();
-  showMessage("🧹 All Events Cleared!", "red");
+  showMessage("All Events Cleared", "red");
 }
 
 function addSampleEvents() {
   events = [
     {
-      title: "Tech Conference",
+      title: "Web Dev Class ",
       date: "2026-02-10",
       category: "Conference",
-      desc: "A big tech event."
+      desc: "Advanced JavaScript"
     },
-    {
-      title: "College Workshop",
-      date: "2026-03-01",
-      category: "Workshop",
-      desc: "Workshop for students."
-    }
+    
   ];
 
   saveEvents();
   displayEvents();
-  showMessage("📌 Sample Events Added!", "blue");
+  showMessage("Sample Events Added!", "blue");
 }
 
-// DOM Demo Key Press
+
 document.addEventListener("keydown", function(event) {
   document.getElementById("keyPressed").innerText = event.key;
 });
