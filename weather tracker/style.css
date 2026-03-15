@@ -1,0 +1,42 @@
+body{
+font-family: Arial;
+background: linear-gradient(135deg,#1e2a78,#2c3e90);
+color:white;
+text-align:center;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.search-box,.weather-box{
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+width:300px;
+}
+
+button{
+background:#ff7a30;
+border:none;
+padding:8px 15px;
+color:white;
+cursor:pointer;
+}
+
+.console{
+background:#0d1b3d;
+margin:30px auto;
+width:650px;
+padding:15px;
+border-radius:10px;
+text-align:left;
+}
+
+#history button{
+margin:3px;
+}
